@@ -1,17 +1,23 @@
-<table class="text-center w-full">
+<table class="w-full">
   <tr>
-    <td>
-      <each loop="item, index in page.socials">
-        <a
-          href="{{ item.link }}"
-          title="{{ item.title}}"
-          target="_blank"
-          class="w-8 h-8 inline-block px-2 bg-contain bg-no-repeat"
-          style="background-image: url('{{item.imageURL}}');"
-        >
-        </a>
-      </each>
-      <p class="m-0 mt-4 text-sm text-slate-500">Работаем с ❤️</p>
+    <td class="w-full sm:w-full sm:inline-block">
+      <table class="w-full">
+        <tr>
+          <td class="p-6 bg-white rounded shadow-sm">
+            <each loop="item, index in page.socials">
+              <a
+                href="{{ item.link }}"
+                title="{{ item.title}}"
+                target="_blank"
+                class="w-8 h-8 inline-block px-2 bg-contain bg-no-repeat"
+                style="background-image: url('{{item.imageURL}}');"
+              >
+              </a>
+            </each>
+            <p class="m-0 mt-4 text-sm text-slate-500">Работаем с ❤️</p>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>

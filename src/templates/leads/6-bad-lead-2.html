@@ -1,0 +1,93 @@
+---
+title: "Дарим скидку 10%"
+preheader: "Дарим скидку 10%!"
+utm: "?utm_source=bitrix24&utm_medium=email&utm_campaign=leads"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-mons">
+      <tr>
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-150 sm:w-full">
+            <tr>
+              <td class="py-8 px-5 text-center">
+                <component src="src/components/header.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm-px-0 text-center">
+                <component src="src/components/menu.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/content.html">
+                  <h2 class="m-0 mb-6 text-2xl leading-6 text-slate-700">
+                    Здравствуйте!
+                  </h2>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    По нашим данным - Вы обращались ранее в нашу компанию, но
+                    наш Отдел Продаж не смог удовлетворить ваш запрос. Каждый
+                    раз, когда мы отменяем чье-то обращение, наш руководитель
+                    отдела продаж грустит:(
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Надеемся на более плодотворное сотрудничество в будущем
+                  </p>
+                </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/promocode.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerDark.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerLight.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-left">
+                <component src="src/components/categories.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 py-5 text-left">
+                <component src="src/components/any-questions.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="w-full px-5 sm:px-0 text-center"
+              >
+                <component src="src/components/footer.html"> </component>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="w-full px-5 pb-4 sm:px-0 text-center"
+              >
+                <component src="src/components/unsubscribe.html"> </component>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

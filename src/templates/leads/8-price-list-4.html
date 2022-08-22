@@ -1,0 +1,86 @@
+---
+title: "Спасибо за ваше обращение"
+preheader: "Спасибо за Ваше обращение!"
+utm: "?utm_source=bitrix24&utm_medium=email&utm_campaign=leads"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-mons">
+      <tr>
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-150 sm:w-full">
+            <tr>
+              <td class="py-8 px-5 text-center">
+                <component src="src/components/header.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm-px-0 text-center">
+                <component src="src/components/menu.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/content.html">
+                  <h2 class="m-0 mb-6 text-2xl leading-6 text-slate-700">
+                    Специальные условия сотрудничества для Вашей компании
+                  </h2>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Наша компания поддерживает долгосрочные отношения с большим
+                    числом своих партнеров. А специальные условия обслуживания
+                    позволяют нашим клиентам быть уверенными в надежном и
+                    быстром обеспечении необходимыми товарами точно в срок.
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Также мы предоставляем особые условия расчета (частичная
+                    предоплата, постоплата, отсрочка платежа, лизинг). Все эти
+                    подробности Вы можете обговорить с нашим менеджером
+                    индивидуально.
+                  </p>
+                </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerDark.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerLight.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-left">
+                <component src="src/components/categories.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 py-5 text-left">
+                <component src="src/components/any-questions.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-center">
+                <component src="src/components/footer.html"> </component>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/unsubscribe.html"> </component>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

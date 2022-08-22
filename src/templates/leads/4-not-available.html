@@ -1,0 +1,87 @@
+---
+title: "Товар временно отсутствует"
+preheader: "Товар временно отсутствует"
+utm: "?utm_source=bitrix24&utm_medium=email&utm_campaign=leads"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-mons">
+      <tr>
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-150 sm:w-full">
+            <tr>
+              <td class="py-8 px-5 text-center">
+                <component src="src/components/header.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm-px-0 text-center">
+                <component src="src/components/menu.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/content.html">
+                  <h2 class="m-0 mb-6 text-2xl leading-6 text-slate-700">
+                    Здравствуйте!
+                  </h2>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Товар из Вашего заказа временно не производится/поставляется
+                    в Российской Федерации. По факту возобновления его
+                    производства наши менеджеры свяжутся с Вами для актуализации
+                    заказа
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Ждем Вас на нашем сайте!
+                  </p>
+                </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerDark.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerLight.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-left">
+                <component src="src/components/categories.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 py-5 text-left">
+                <component src="src/components/any-questions.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="w-full px-5 sm:px-0 text-center"
+              >
+                <component src="src/components/footer.html"> </component>
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="w-full px-5 pb-4 sm:px-0 text-center"
+              >
+                <component src="src/components/unsubscribe.html"> </component>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

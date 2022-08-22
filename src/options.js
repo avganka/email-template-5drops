@@ -89,15 +89,15 @@ const OPTIONS = {
     textColor: "black",
     title: "Лабораторное оборудование",
     subtitle:
-      "Аналитическое и общелабораторное оборудование собственной торговой марки. В наличии на складе",
+      "Аналитическое и общелабораторное оборудование в наличии на складе",
     link: "https://5drops.ru/catalog/laboratornoe_oborudovanie/laboratornoe_oborudovanie_5drops_ru/",
     imageURL:
       "https://5drops.ru/upload/iblock/52c/52cf3f8af734b6864a4235956538c27e.jpg",
   },
   contacts: {
     site: "https://5drops.ru",
-    email: "promo@5drops.ru",
-    phone: "+7 (499) 348-82-13",
+    email: "info@5drops.ru",
+    phone: "+7 (812) 409-42-70", //78124094270
   },
   socials: [
     {

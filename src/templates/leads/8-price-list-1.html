@@ -1,0 +1,143 @@
+---
+title: "Спасибо за ваше обращение"
+preheader: "Спасибо за Ваше обращение!"
+utm: "?utm_source=bitrix24&utm_medium=email&utm_campaign=leads"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-mons">
+      <tr>
+        <td align="center" class="bg-slate-50 sm:px-4">
+          <table class="w-150 sm:w-full">
+            <tr>
+              <td class="py-8 px-5 text-center">
+                <component src="src/components/header.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm-px-0 text-center">
+                <component src="src/components/menu.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/content.html">
+                  <h2 class="m-0 mb-6 text-2xl leading-6 text-slate-700">
+                    Компания "Пять Капель" - поставщик лабораторий по России и
+                    СНГ
+                  </h2>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Мы занимаемся поставками товаров для химических процессов по
+                    России и СНГ. Мы являемся дилерами нескольких десятков
+                    компаний-производителей различных линеек оборудования
+                    (российские и зарубежные компании).
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Товарные группы, которые мы поставляем:
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    •
+                    <a
+                      class="text-primary"
+                      href="https://5drops.ru/catalog/laboratornaya_posuda/borosilikatnaya_laboratornaya_posuda_5drops_ru/{{page.utm}}"
+                      >лабораторная посуда</a
+                    ><br />
+                    •
+                    <a
+                      class="text-primary"
+                      href="https://5drops.ru/catalog/laboratornoe_oborudovanie/laboratornoe_oborudovanie_5drops_ru/{{page.utm}}"
+                      >лабораторное оборудование</a
+                    ><br />
+                    •
+                    <a
+                      class="text-primary"
+                      href="https://5drops.ru/catalog/raskhodnye_materialy_dlya_laboratorii_i_analizov/{{page.utm}}"
+                      >расходные материла для медицины</a
+                    ><br />
+                    •
+                    <a
+                      class="text-primary"
+                      href="https://5drops.ru/catalog/raskhodnye_materialy_dlya_laboratorii_i_analizov/probirki_dlya_vzyatiya_krovi/{{page.utm}}"
+                      >вакуумные пробирки</a
+                    ><br />
+                    •
+                    <a
+                      class="text-primary"
+                      href="https://5drops.ru/catalog/steklyannye_emkosti/flakony/{{page.utm}}"
+                      >флаконы и емкости для реактивов</a
+                    >
+                    <br />
+                    • и многое другое<br />
+                  </p>
+                </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-left">
+                <component src="src/components/content.html">
+                  <h2 class="m-0 mb-6 text-2xl leading-6 text-slate-700">
+                    Наша компания - это:
+                  </h2>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    • <b>Более 10 000</b> довольных клиентов за все время нашей
+                    работы<br />
+                    • Cобственная линейка лабораторной посуды и оборудования<br />
+                    • <b>5000 товаров</b> постоянно в наличии у нас на складе, которые
+                    помогут оснастить лабораторию любой сложности<br />
+                    • Прямые поставки в 470 городов по России и СНГ<br />
+                    • <b>Гарантия до 3-х лет</b> на всю нашу продукцию<br />
+                  </p>
+                  <p class="m-0 mb-6 text-base text-slate-700">
+                    Мы работаем в этой сфере с 2013 года и постоянно
+                    совершенствуемся. Являемся крупным поставщиком
+                    отечественного и зарубежного лабораторного оборудования,
+                    посуды и других товаров лабораторной тематики.
+                  </p>
+                </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerDark.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/bannerLight.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-left">
+                <component src="src/components/categories.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="px-5 py-5 text-left">
+                <component src="src/components/any-questions.html"> </component>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-full px-5 sm:px-0 text-center">
+                <component src="src/components/footer.html"> </component>
+              </td>
+            </tr>
+            <tr>
+              <td class="w-full px-5 pb-4 sm:px-0 text-center">
+                <component src="src/components/unsubscribe.html"> </component>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>

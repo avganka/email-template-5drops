@@ -1,54 +1,36 @@
-
 <table class="w-full font-mons">
   <tr>
     <td
-      class=" bg-left bg-no-repeat bg-cover rounded text-left"
-      style="background-position: left; background-image: url('{{ page.bannerLight.imageURL }}');"
+      class="bg-top bg-no-repeat bg-cover rounded text-left py-10"
+      style="background-image: url('{{ page.bannerLight.imageURL }}');"
     >
-      <!-- [if mso]>
-      <v:rect stroke="false" style="width: 600px;" xmlns:v="urn:schemas-microsoft-com:vml">
-      <v:fill type="frame" src="{{{ page.bannerLight.imageURL }}}" />
-      <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
-     <![endif] -->
-      <div class="leading-16 sm:h-8">&zwnj;</div>
-      <table class="w-full">
+      <table class="w-full h-auto">
         <tr>
           <td class="w-12 sm:w-6"></td>
           <td>
-            <h1 class="m-0 mb-4 text-4xl sm:text-3xl text-{{ page.bannerLight.textColor}} sm:leading-10">
+            <h1
+              class="m-0 mb-4 text-4xl sm:text-3xl text-{{ page.bannerLight.textColor}} sm:leading-10"
+            >
               {{page.bannerLight.title}}
             </h1>
-            <p class="m-0 text-{{ page.bannerLight.textColor}} text-lg leading-6">{{page.bannerLight.subtitle}}</p>
-            <div class="leading-16 sm:h-8">&zwnj;</div>
-            <div class="leading-full">
-              <a
-                href="{{page.bannerLight.link}}{{page.utm}}"
-                class="inline-block py-4 px-6 rounded text-base font-semibold text-center no-underline text-white bg-primary hover:bg-indigo-700"
+            <p
+              class="m-0 pr-16 h-20 text-{{ page.bannerLight.textColor}} text-lg leading-6"
+            >
+              {{page.bannerLight.subtitle}}
+            </p>
+
+            <a
+              href="{{page.bannerLight.link}}{{page.utm}}"
+              class="inline-block mt-6 py-4 px-6 rounded text-base font-semibold text-center no-underline text-white bg-primary hover:bg-indigo-700"
+            >
+              <span class="mso-text-raise-4" style="mso-text-raise: 16px"
+                >Посмотреть &rarr;</span
               >
-                <outlook>
-                  <i class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
-                    >&#8202;</i
-                  >
-                </outlook>
-                <span class="mso-text-raise-4" style="mso-text-raise: 16px"
-                  >Посмотреть &rarr;</span
-                >
-                <outlook>
-                  <i class="tracking-6 -mso-font-width-full">&#8202;</i>
-                </outlook>
-              </a>
-            </div>
+            </a>
           </td>
           <td class="w-12 sm:w-6"></td>
         </tr>
       </table>
-      <div class="leading-16 sm:h-8">&zwnj;</div>
-
-      <!--[if mso]>
-      </div></v:textbox></v:rect>
-    <![endif]-->
     </td>
   </tr>
 </table>
-
-

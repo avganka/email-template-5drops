@@ -1,0 +1,88 @@
+---
+title: "Подтвердите ваш адрес электронной почты"
+preheader: "Пожалуйста подтвердите ваш адрес электронной почты, чтобы закончить регистрацию на сайте"
+utm: "?utm_source=bitrix24&utm_medium=email&utm_campaign=leads"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-slate-50">
+          <table class="w-150 sm:w-full">
+            <tr>
+              <td class="py-8 px-5 text-center">
+                <component src="src/components/header.html"> </component>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" class="sm:px-6">
+                <table class="w-full font-mons">
+                  <tr>
+                    <td
+                      class="p-12 sm:px-6 bg-white text-slate-700 text-base text-left leading-6 rounded shadow-sm"
+                    >
+                      <p>Здравствуйте,</p>
+                      <p
+                        class="text-2xl sm:leading-8 text-black font-semibold m-0 mb-6"
+                      >
+                        Это вас мы ищем?
+                      </p>
+                      <p class="m-0 mb-6">
+                        Пожалуйста, подтвердите ващ адрес электронной почты,
+                        нажав на кнопку ниже:
+                      </p>
+                      <div class="leading-full">
+                        <a
+                          href="#"
+                          class="inline-block py-3.5 px-4 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-primary hover:bg-indigo-500"
+                        >
+                          <outlook>
+                            <i
+                              class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                              >&#8202;</i
+                            >
+                          </outlook>
+                          <span class="mso-text-raise-4"
+                            >Подтвердить &rarr;</span
+                          >
+                          <outlook>
+                            <i class="tracking-6 -mso-font-width-full"
+                              >&#8202;</i
+                            >
+                          </outlook>
+                        </a>
+                      </div>
+                      <table class="w-full">
+                        <tr>
+                          <td class="py-8">
+                            <div class="bg-slate-200 h-px leading-px">
+                              &zwnj;
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                      <p class="m-0 mb-4">
+                        Если вы не регистрировались на <a href="{{ page.contacts.site}}{{utm}}" class="no-underline text-primary hover:text-indigo-500">5drops.ru</a>, вы можете
+                        смело игнорировать это письмо
+                      </p>
+                      <p class="m-0 mb-4">Спасибо, <br />Команда 5drops.ru</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h-12"></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center text-slate-600 text-xs px-6">
+                      <component src="src/components/footer.html"></component>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</extends>
