@@ -1,0 +1,205 @@
+<table class="w-full pb-4">
+  <tr>
+    <td class="w-full sm:w-full sm:inline-block">
+      <table class="w-full">
+        <tr>
+          <td class="p-6 bg-white rounded shadow-sm">
+            <h2 class="m-0 text-2xl leading-6 text-slate-700">
+              Персональные рекомендации
+            </h2>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table class="w-full font-mons">
+  <tr></tr>
+  <tr>
+    <each loop="item, index in page.goods">
+      <switch expression="{{(index + 1) % 2}}">
+        <case n="1">
+          <td
+            class="[width:49%] [padding-right:1%] pb-4 sm:px-0 sm:pb-8 sm:w-full inline-block text-left align-top"
+          >
+            <a href="{{item.link}}{{page.utm}}" class="no-underline">
+              <table class="w-full h-full">
+                <tr>
+                  <td
+                    class="p-6 pb-0 bg-white rounded shadow-sm bg-center bg-contain bg-no-repeat"
+                    style="
+                      background-image: url('{{item.imageURL}}'); 
+                      height: 250px;  
+                    "
+                  >
+                    <!-- [if mso]>
+                         <v:rect stroke="false" style="height: 250px" xmlns:v="urn:schemas-microsoft-com:vml">
+                           <v:fill type="frame" src="{{item.imageURL}}" />
+                          <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
+                        <![endif] -->
+                    <!--[if mso]>
+                       </div></v:textbox></v:rect>
+                        <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 pb-0 bg-white rounded shadow-sm">
+                    <h2
+                      class="m-0 mb-3 text-lg leading-6 text-slate-700 h-24 sm:text-xl sm:h-auto sm:pb-5"
+                    >
+                      {{ item.title }}
+                    </h2>
+                    <table class="w-full">
+                      <tr>
+                        <td
+                          class="pt-3 text-left text-sm text-slate-700 sm:text-base leading-4 w-2/5"
+                        >
+                          Розничная цена
+                        </td>
+                        <td
+                          class="pt-3 text-right text-lg font-bold text-slate-700 sm:text-2xl"
+                        >
+                          {{ item.retailPrice }} руб.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          class="pt-3 text-left text-sm text-slate-700 sm:text-base leading-4 w-2/5"
+                        >
+                          Оптовая цена
+                        </td>
+                        <td
+                          class="pt-3 text-right text-lg font-bold text-slate-700 sm:text-2xl"
+                        >
+                          {{ item.wholesalePrice }} руб.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <div class="leading-full w-full">
+                      <a
+                        href="{{item.link}}{{page.utm}}"
+                        class="inline-block py-4 px-10 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-primary hover:bg-indigo-700 sm:px-20"
+                      >
+                        <outlook>
+                          <i
+                            class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                            >&#8202;</i
+                          >
+                        </outlook>
+                        <span
+                          class="mso-text-raise-4"
+                          style="mso-text-raise: 16px"
+                          >Купить &rarr;</span
+                        >
+                        <outlook>
+                          <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                        </outlook>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </case>
+        <case n="0">
+          <td
+            class="[width:49%] [padding-left:1%] pb-4 sm:px-0 sm:w-full inline-block align-top"
+          >
+            <a href="{{item.link}}{{page.utm}}" class="no-underline">
+              <table class="w-full h-full">
+                <tr>
+                  <td
+                    class="p-6 pb-0 bg-white rounded shadow-sm bg-center bg-contain bg-no-repeat"
+                    style="
+                      background-image: url('{{item.imageURL}}');
+                      height: 250px;
+            
+                    "
+                  >
+                    <!-- [if mso]>
+                           <v:rect stroke="false" style="height: 250px" xmlns:v="urn:schemas-microsoft-com:vml">
+                             <v:fill type="frame" src="{{item.imageURL}}" />
+                            <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
+                          <![endif] -->
+                    <!--[if mso]>
+                         </div></v:textbox></v:rect>
+                          <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 pb-0 bg-white rounded shadow-sm">
+                    <h2
+                      class="m-0 mb-3 text-lg leading-6 text-slate-700 h-24 sm:text-xl sm:h-auto"
+                    >
+                      {{ item.title}}
+                    </h2>
+                    <table class="w-full">
+                      <tr>
+                        <td
+                          class="pt-3 text-left text-sm text-slate-700 sm:text-base leading-4 w-2/5"
+                        >
+                          Розничная цена
+                        </td>
+                        <td
+                          class="pt-3 text-right text-lg font-bold text-slate-700 sm:text-2xl"
+                        >
+                          {{ item.retailPrice }} руб.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          class="pt-3 text-left text-sm text-slate-700 sm:text-base leading-4 w-2/5"
+                        >
+                          Оптовая цена
+                        </td>
+                        <td
+                          class="pt-3 text-right text-lg font-bold text-slate-700 sm:text-2xl"
+                        >
+                          {{ item.wholesalePrice }} руб.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <div class="leading-full w-full">
+                      <a
+                        href="{{item.link}}{{page.utm}}"
+                        class="inline-block py-4 px-10 rounded text-base font-semibold text-center [text-decoration:none] text-white bg-primary hover:bg-indigo-700 sm:px-20"
+                      >
+                        <outlook>
+                          <i
+                            class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                            >&#8202;</i
+                          >
+                        </outlook>
+                        <span
+                          class="mso-text-raise-4"
+                          style="mso-text-raise: 16px"
+                          >Купить &rarr;</span
+                        >
+                        <outlook>
+                          <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                        </outlook>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </case>
+        <default>
+          <div></div>
+        </default>
+      </switch>
+    </each>
+  </tr>
+</table>

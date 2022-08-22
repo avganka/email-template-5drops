@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.env.local
+# testing
+/coverage
+
+# production
+/build_local
+/build_production
+
+# markup
+/build
+/markup
+
+
+# misc
+Thumbs.db
+.DS_Store
+.env
+*.log*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editors
+.idea
+*.sublime*
+.vscode

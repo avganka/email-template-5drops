@@ -1,0 +1,34 @@
+<table class="w-full font-mons">
+  <tr>
+    <td
+      class="w-1-2 text-left sm:pb-4 sm:w-full sm-inline-block align-middle sm:text-center"
+    >
+      <a href="{{page.contacts.site}}{{page.utm}}" target="_blank">
+        <img
+          src="{{page.logoImageURL}}"
+          width="220"
+          alt="{{page.contacts.site}}"
+          class="max-w-220 align-middle [border:0]"
+        />
+      </a>
+    </td>
+    <td
+      class="w-1-2 text-right sm-pb-0 sm-w-full sm-inline-block align-middle sm:text-center"
+    >
+      <a
+        href="mailto:{{page.contacts.email}}subject=&body="
+        target="_blank"
+        class="text-black block [text-decoration:none]"
+      >
+        {{page.contacts.email}}
+      </a>
+      <a
+        href="tel:{{page.contacts.phone}}"
+        target="_blank"
+        class="text-black block [text-decoration:none]"
+      >
+        {{page.contacts.phone}}
+      </a>
+    </td>
+  </tr>
+</table>

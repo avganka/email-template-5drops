@@ -1,0 +1,201 @@
+<table class="w-full font-mons">
+  <tr>
+    <each loop="item, index in page.categories">
+      <switch expression="{{(index + 1) % 3}}">
+        <case n="1">
+          <td
+            class="[width:32.333333%] [padding-right:1%] pb-4 sm:px-0 sm:px-0 sm:w-full inline-block align-top"
+          >
+            <a href="{{item.link}}{{page.utm}}" class="no-underline">
+              <table class="w-full">
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <h2
+                      class="m-0 text-base leading-5 text-slate-700 h-15 sm:text-xl sm:h-auto"
+                    >
+                      {{item.title}}
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="bg-white rounded shadow-sm bg-center bg-no-repeat bg-contain"
+                    style="
+                background-image: url('{{item.imageURL}}');
+                height: 150px;
+                border-right: 24px solid white;
+                border-left: 24px solid white;
+              "
+                  >
+                    <!-- [if mso]>
+                <v:rect stroke="false" style="height: 150px" xmlns:v="urn:schemas-microsoft-com:vml">
+                  <v:fill type="frame" src="{{ item.imageURL }}" />
+                 <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
+               <![endif] -->
+                    <!--[if mso]>
+              </div></v:textbox></v:rect>
+               <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <div class="leading-full w-full">
+                      <a
+                        href="{{ item.link}}{{page.utm}}"
+                        class="inline-block py-3 sm:px-20 px-5 rounded text-sm font-semibold no-underline text-white bg-primary hover:bg-indigo-700"
+                      >
+                        <outlook>
+                          <i
+                            class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                            >&#8202;</i
+                          >
+                        </outlook>
+                        <span
+                          class="mso-text-raise-4"
+                          style="mso-text-raise: 16px"
+                          >Купить &rarr;</span
+                        >
+                        <outlook>
+                          <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                        </outlook>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </case>
+        <case n="2">
+          <td
+            class="[width:32.333333%] [padding-left:0.5%] [padding-right:0.5%] pb-4  sm:px-0 sm:w-full inline-block align-top"
+          >
+            <a href="{{item.link}}{{page.utm}}" class="no-underline">
+              <table class="w-full align-bottom">
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <h2
+                      class="m-0 text-base leading-5 text-slate-700 h-15 sm:text-xl sm:h-auto"
+                    >
+                      {{item.title}}
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="bg-white rounded shadow-sm bg-center bg-contain bg-no-repeat"
+                    style="
+                background-image: url('{{item.imageURL}}');
+                height: 150px;
+                border-right: 24px solid white;
+                border-left: 24px solid white;
+              "
+                  >
+                    <!-- [if mso]>
+                <v:rect stroke="false" style="height: 150px" xmlns:v="urn:schemas-microsoft-com:vml">
+                  <v:fill type="frame" src="{{{ item.imageURL }}}" />
+                 <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
+               <![endif] -->
+                    <!--[if mso]>
+              </div></v:textbox></v:rect>
+               <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <div class="leading-full w-full">
+                      <a
+                        href="{{ item.link}}{{page.utm}}"
+                        class="inline-block py-3 sm:px-20 px-5 rounded text-sm font-semibold no-underline text-white bg-primary hover:bg-indigo-700"
+                      >
+                        <outlook>
+                          <i
+                            class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                            >&#8202;</i
+                          >
+                        </outlook>
+                        <span
+                          class="mso-text-raise-4"
+                          style="mso-text-raise: 16px"
+                          >Купить &rarr;</span
+                        >
+                        <outlook>
+                          <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                        </outlook>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </case>
+        <case n="0">
+          <td class="[width:32.333333%] [padding-left:1%] pb-4 sm:px-0 sm:w-full inline-block align-top">
+            <a href="{{item.link}}" class="no-underline">
+              <table class="w-full">
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <h2
+                      class="m-0 text-base leading-5 text-slate-700 h-15 sm:text-xl sm:h-auto"
+                    >
+                      {{item.title}}
+                    </h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="bg-white rounded shadow-sm bg-center bg-contain bg-no-repeat"
+                    style="
+                  background-image: url('{{item.imageURL}}');
+                  height: 150px;
+                  border-right: 24px solid white;
+                  border-left: 24px solid white;
+              "
+                  >
+                    <!-- [if mso]>
+                <v:rect stroke="false" style="height: 150px" xmlns:v="urn:schemas-microsoft-com:vml">
+                  <v:fill type="frame" src="{{{ item.imageURL }}}" />
+                 <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true"><div>
+               <![endif] -->
+                    <!--[if mso]>
+              </div></v:textbox></v:rect>
+               <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-6 bg-white rounded shadow-sm sm:text-center">
+                    <div class="leading-full w-full">
+                      <a
+                        href="{{ item.link}}"
+                        class="inline-block py-3 sm:px-20 px-5 rounded text-sm font-semibold [text-decoration:none] text-white bg-primary hover:bg-indigo-700"
+                      >
+                        <outlook>
+                          <i
+                            class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+                            >&#8202;</i
+                          >
+                        </outlook>
+                        <span
+                          class="mso-text-raise-4"
+                          style="mso-text-raise: 16px"
+                          >Купить &rarr;</span
+                        >
+                        <outlook>
+                          <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+                        </outlook>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </case>
+        <default>
+          <div></div>
+        </default>
+      </switch>
+    </each>
+  </tr>
+</table>

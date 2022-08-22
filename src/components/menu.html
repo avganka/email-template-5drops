@@ -1,0 +1,25 @@
+<table class="w-full font-mons">
+  <tr>
+    <td class="bg-primary rounded">
+      <each loop="item, index in page.menu">
+        <a
+          href="{{item.link}}{{page.utm}}"
+          target="_blank"
+          class="no-underline uppercase text-base text-white px-5 py-4.5 hover:bg-indigo-700 inline-block sm:w-1/3 sm:py-3"
+        >
+          <outlook>
+            <i class="tracking-6 -mso-font-width-full mso-text-raise-7.5"
+              >&#8202;</i
+            >
+          </outlook>
+          <span class="mso-text-raise-4" style="mso-text-raise: 16px"
+            >{{item.title}}</span
+          >
+          <outlook>
+            <i class="tracking-6 -mso-font-width-full">&#8202;</i>
+          </outlook>
+        </a>
+      </each>
+    </td>
+  </tr>
+</table>
